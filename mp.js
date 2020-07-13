@@ -1,0 +1,181 @@
+function death1(){
+	var death1 = document.getElementById("death1");
+	var landing = document.getElementById("landing");
+		if (death1.style.display == "none" && landing.style.display == "none"){
+		death1.style.display = "block";
+		document.getElementById("death1Choice").style.backgroundColor="black";
+		document.getElementById("death1Choice").setAttribute("onClick","");
+		document.getElementById("landingChoice").style.backgroundColor="black";
+		document.getElementById("landingChoice").setAttribute("onClick","");
+		}
+		else{
+			death1.style.display = "none";
+			document.getElementById("death1Choice").style.backgroundColor="";
+			document.getElementById("death1Choice").setAttribute("onClick","death1()");
+			document.getElementById("landingChoice").style.backgroundColor="";
+			document.getElementById("landingChoice").setAttribute("onClick","landing()");
+			}
+	}
+	
+function landing(){
+	var death1 = document.getElementById("death1");
+	var landing = document.getElementById("landing");
+		if (landing.style.display == "none" && death1.style.display == "none"){
+		landing.style.display = "block";
+		document.getElementById("death1Choice").style.backgroundColor="black";
+		document.getElementById("death1Choice").setAttribute("onClick","");
+		document.getElementById("landingChoice").style.backgroundColor="black";
+		document.getElementById("landingChoice").setAttribute("onClick","");
+		}
+		else{
+			landing.style.display = "none";
+			document.getElementById("death1Choice").style.backgroundColor="";
+			document.getElementById("death1Choice").setAttribute("onClick","death1()");
+			document.getElementById("landingChoice").style.backgroundColor="";
+			document.getElementById("landingChoice").setAttribute("onClick","landing()");
+			}
+	}
+	
+function guessRight(){
+	var correlation = document.getElementById("correlation");
+	var noClue = document.getElementById("noClue");
+		if (correlation.style.display == "none" && noClue.style.display == "none"){
+		correlation.style.display = "block";
+		document.getElementById("falseChoice1").style.backgroundColor="black";
+		document.getElementById("falseChoice1").setAttribute("onClick","");
+		document.getElementById("falseChoice2").style.backgroundColor="black";
+		document.getElementById("falseChoice2").setAttribute("onClick","");
+		}
+		else{
+			correlation.style.display = "none";
+			document.getElementById("falseChoice1").style.backgroundColor="";
+			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
+			document.getElementById("falseChoice2").style.backgroundColor="";
+			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
+			}
+	}	
+	
+function guessWrong(){
+	var correlation = document.getElementById("correlation");
+	var noClue = document.getElementById("noClue");
+		if (noClue.style.display == "none" && correlation.style.display == "none"){
+		noClue.style.display = "block";
+		document.getElementById("falseChoice1").style.backgroundColor="black";
+		document.getElementById("falseChoice1").setAttribute("onClick","");
+		document.getElementById("falseChoice2").style.backgroundColor="black";
+		document.getElementById("falseChoice2").setAttribute("onClick","");
+		}
+		else{
+			noClue.style.display = "none";
+			document.getElementById("falseChoice1").style.backgroundColor="";
+			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
+			document.getElementById("falseChoice2").style.backgroundColor="";
+			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
+			}
+	}		
+
+function enter(){
+	var goInside = document.getElementById("enter");
+	var stayOut = document.getElementById("death2");
+		if (goInside.style.display == "none" && stayOut.style.display == "none"){
+		goInside.style.display = "block";
+		document.getElementById("enterChoice").style.backgroundColor="black";
+		document.getElementById("enterChoice").setAttribute("onClick","");
+		document.getElementById("death2Choice").style.backgroundColor="black";
+		document.getElementById("death2Choice").setAttribute("onClick","");
+		}
+		else{
+			goInside.style.display = "none";
+			document.getElementById("enterChoice").style.backgroundColor="";
+			document.getElementById("enterChoice").setAttribute("onClick","enter()");
+			document.getElementById("death2Choice").style.backgroundColor="";
+			document.getElementById("death2Choice").setAttribute("onClick","death2()");
+			}
+	}		
+
+function death2(){
+	var goInside = document.getElementById("enter");
+	var stayOut = document.getElementById("death2");
+		if (goInside.style.display == "none" && stayOut.style.display == "none"){
+		stayOut.style.display = "block";
+		document.getElementById("enterChoice").style.backgroundColor="black";
+		document.getElementById("enterChoice").setAttribute("onClick","");
+		document.getElementById("death2Choice").style.backgroundColor="black";
+		document.getElementById("death2Choice").setAttribute("onClick","");
+		}
+		else{
+			stayOut.style.display = "none";
+			document.getElementById("enterChoice").style.backgroundColor="";
+			document.getElementById("enterChoice").setAttribute("onClick","enter()");
+			document.getElementById("death2Choice").style.backgroundColor="";
+			document.getElementById("death2Choice").setAttribute("onClick","death2()");
+			}
+	}		
+
+function death3(){
+	var nastyNode = document.getElementById("death3");
+	var goUp = document.getElementById("upperRoom");
+		if (nastyNode.style.display == "none" && goUp.style.display == "none"){
+		nastyNode.style.display = "block";
+		document.getElementById("death3Choice").style.backgroundColor="black";
+		document.getElementById("death3Choice").setAttribute("onClick","");
+		document.getElementById("upperRoomChoice").style.backgroundColor="black";
+		document.getElementById("upperRoomChoice").setAttribute("onClick","");
+		}
+		else{
+			nastyNode.style.display = "none";
+			document.getElementById("death3Choice").style.backgroundColor="";
+			document.getElementById("death3Choice").setAttribute("onClick","death3()");
+			document.getElementById("upperRoomChoice").style.backgroundColor="";
+			document.getElementById("upperRoomChoice").setAttribute("onClick","upperRoom()");
+			}
+	}	
+
+function upperRoom(){
+	var nastyNode = document.getElementById("death3");
+	var goUp = document.getElementById("upperRoom");
+		if (nastyNode.style.display == "none" && goUp.style.display == "none"){
+		goUp.style.display = "block";
+		document.getElementById("death3Choice").style.backgroundColor="black";
+		document.getElementById("death3Choice").setAttribute("onClick","");
+		document.getElementById("upperRoomChoice").style.backgroundColor="black";
+		document.getElementById("upperRoomChoice").setAttribute("onClick","");
+		}
+		else{
+			goUp.style.display = "none";
+			document.getElementById("death3Choice").style.backgroundColor="";
+			document.getElementById("death3Choice").setAttribute("onClick","death3()");
+			document.getElementById("upperRoomChoice").style.backgroundColor="";
+			document.getElementById("upperRoomChoice").setAttribute("onClick","upperRoom()");
+			}
+	}	
+	
+/*will clear out all the selected paths, hopefully progressively from the bottom up*/
+function clearance(){
+	if(document.getElementById("death3").style.display == "block"){death3();}
+	if(document.getElementById("upperRoom").style.display == "block"){upperRoom();}
+		setTimeout(function () {
+		if(document.getElementById("enter").style.display == "block"){enter();}
+		if(document.getElementById("death2").style.display == "block"){death2();}
+		}, 1000);
+			setTimeout(function () {
+			if(document.getElementById("correlation").style.display == "block"){guessRight();}
+			if(document.getElementById("noClue").style.display == "block"){guessWrong();}
+			}, 2000);
+				setTimeout(function () {
+				if(document.getElementById("death1").style.display == "block"){death1();}
+				if(document.getElementById("landing").style.display == "block"){landing();}
+				}, 3000);
+}
+
+	/* Set the width of the side navigation to 250px */
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+
+
