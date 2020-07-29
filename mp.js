@@ -150,7 +150,9 @@ function upperRoom(){
 			}
 	}	
 	
-/*will clear out all the selected paths, hopefully progressively from the bottom up*/
+/*will clear out all the selected paths, hopefully progressively from the bottom up
+As I add tiers to the story, need to change the timeout on each level so the lowest level goes last
+This will get mo funky when I really start branching, and when branches ad more transformations to the page, which need to be trnasformed back*/
 function clearance(){
 	if(document.getElementById("death3").style.display == "block"){death3();}
 	if(document.getElementById("upperRoom").style.display == "block"){upperRoom();}
