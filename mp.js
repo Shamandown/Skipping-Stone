@@ -1,26 +1,26 @@
-function death1(){
-	var death1 = document.getElementById("death1");
+function adrift(){
+	var adrift = document.getElementById("adrift");
 	var landing = document.getElementById("landing");
-		if (death1.style.display == "none" && landing.style.display == "none"){
-		death1.style.display = "block";
+		if (adrift.style.display == "none" && landing.style.display == "none"){
+		adrift.style.display = "block";
 		document.getElementById("death1Choice").style.backgroundColor="black";
 		document.getElementById("death1Choice").setAttribute("onClick","");
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
 		}
 		else{
-			death1.style.display = "none";
+			adrift.style.display = "none";
 			document.getElementById("death1Choice").style.backgroundColor="";
-			document.getElementById("death1Choice").setAttribute("onClick","death1()");
+			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
 			}
 	}
 	
 function landing(){
-	var death1 = document.getElementById("death1");
+	var adrift = document.getElementById("adrift");
 	var landing = document.getElementById("landing");
-		if (landing.style.display == "none" && death1.style.display == "none"){
+		if (landing.style.display == "none" && adrift.style.display == "none"){
 		landing.style.display = "block";
 		document.getElementById("death1Choice").style.backgroundColor="black";
 		document.getElementById("death1Choice").setAttribute("onClick","");
@@ -30,7 +30,7 @@ function landing(){
 		else{
 			landing.style.display = "none";
 			document.getElementById("death1Choice").style.backgroundColor="";
-			document.getElementById("death1Choice").setAttribute("onClick","death1()");
+			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
 			}
@@ -165,7 +165,7 @@ function clearance(){
 			if(document.getElementById("noClue").style.display == "block"){guessWrong();}
 			}, 2000);
 				setTimeout(function () {
-				if(document.getElementById("death1").style.display == "block"){death1();}
+				if(document.getElementById("adrift").style.display == "block"){adrift();}
 				if(document.getElementById("landing").style.display == "block"){landing();}
 				}, 3000);
 }

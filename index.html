@@ -68,14 +68,14 @@
 		<!--a centered form with a question, with 2 buttons below. Clicking each will call
 		new div with story segment and next choice to appear. only 1 of the two can appear at a time-->
 		<form align="center">Hitch a ride on the Skipping Stone?<br>
-			<input type="button" id="death1Choice" value="Abort"  onclick="death1()" />
+			<input type="button" id="death1Choice" value="Abort"  onclick="adrift()" />
 				-----
 			<input type="button" id="landingChoice" value="Land" onclick="landing()"/>
 		</form>
 	</div>
 
-	<div class="story transform" id="death1" style="display: none;">
-		<article class="basic"></article>
+	<div class="story transform" id="adrift" style="display: none;">
+		<article class="basic">
 			<p>I lunged forward, bashing Edwin aside and taking control of the console. He fought and cursed and clawed at me. I cut our ship up off its intercepting trajectory, aimed us squarely back toward Earth, and cut our burn. The Skipping Stone pulled ahead of us, filling our field of view, and then dwindling.
 			</p><p>Edwin shoved me off. I pulled myself back into my nav chair, happy to still be alive. He turned his chair about. I thought he would be angry, but instead he looked at me like a mournful old dog and said, “You fool. You’ve killed us.”
 			</p><p>I shook my head. “We would have smashed to splinters against that thing. We weren’t nearly matching its—”
@@ -312,7 +312,7 @@
 
 	<div class="story transform" id="MadScience" style="display: none;">
 		<article class="basic">
-			<p>bio:control monsters, land with stone. Monsters rush the world. Edwin sets up a lab near the hive. Avoids the beasts with the torus. Does experiments on them and people. Rupert is shattered and controllable, goes full-Igor. When Edwin is ready, they go into the Hive. He says to stop them, but then it turns out he wants to merge with the queen, take full control. Choice-point: Enable or betray. (maybe there's monster-hunters targeting him, and Rupert can assist them or stop them.)</p>	
+			<p>bio:control monsters, land with stone. Manages to change the code to make the Director really stupid. Will take some time to re-develop sentience. Monsters rush the world. Edwin sets up a lab near the hive. Avoids the beasts with the torus. Does experiments on them and people. Rupert is shattered and controllable, goes full-Igor. When Edwin is ready, they go into the Hive. He says to stop them, but then it turns out he wants to merge with the Director and re-elevate it, take full control. Choice-point: Enable or betray. (maybe there's monster-hunters targeting him, and Rupert can assist them or stop them.)</p>	
 		</article>
 		<form align="center">Question?<br>
 			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
@@ -323,7 +323,7 @@
 
 	<div class="story transform" id="MonsterHunter" style="display: none;">
 		<article class="basic">
-			<p>Escape in the shuttle, land outside ground zero where stone lands and becomes hive. Witness storm of monsters. Time passes. They are monster hunters, Enclave protected with brute force and some weapons derived from the Torus. Edwin delivers statement, "No matter what, don't let the monsters get the Torus." They storm the hive for the final kill. The whole operation goes pear-shaped, Edwin is in the clutches of the queen-thing (kinda don't want it to be a queen. Don't wanna rip off Alien too much) it's about to kill him. Rupert has a shot. Edwin throws him the Torus. Choice-point. Catch the thing or take the shot?</p>	
+			<p>Escape in the shuttle, land outside ground zero where stone lands and becomes hive. Witness storm of monsters. Time passes. They are monster hunters, Enclave protected with brute force and some weapons derived from the Torus. Edwin delivers statement, "No matter what, don't let the monsters get the Torus." They storm the hive for the final kill. He has learned enough about the thing to use it to kill the Director. The whole operation goes pear-shaped, Edwin is in the clutches of the Director. it's about to kill him. Rupert has a shot. Edwin throws him the Torus. Choice-point. Catch the thing or take the shot?</p>	
 		</article>
 		<form align="center">Question?<br>
 			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
@@ -334,7 +334,7 @@
 
 	<div class="story transform" id="IcedEarth" style="display: none;">
 		<article class="basic">
-			<p>Rupert doesn't interfere, is as curious and excited as Edwin, and cue Akbar because of course "It's a trap!" The apparatus converts the target cargo into energy, which it launches into the moon. The moon comes apart, most of its matter vanishing into an implosion, some scattered debris hurtling at the Skipping Stone and Earth. Abandon ship. Years pass, quickly evident that the event pulled earth off course and, now that the system is deprived of the moon's mass, it will settle into a wider orbit. Between that and the impact dust, Earth is already frozen, Ghosts rule the world and are building cities. Current action starts in a human holdout, Edwin in charge. they have some weapons derived from the Barbel that can stop ghosts. He's perfected small teleportation, though the energy cost is high. One shot, he and Rupert teleport up to use the losenge device to travel back in time. They are well armed, but it has to get to a choice point different from the other heroic line. (do they both go back in time together? That'd be an interesting twist)</p>	
+			<p>Rupert doesn't interfere, is as curious and excited as Edwin, and cue Akbar because of course "It's a trap!" The apparatus converts the target cargo into energy, which it launches into the moon. The moon comes apart, most of its matter vanishing into an implosion, some scattered debris hurtling at the Skipping Stone and Earth. Abandon ship. Years pass, quickly evident that the event pulled earth off course and, now that the system is deprived of the moon's mass, it will settle into a wider orbit. Between that and the impact dust, Earth is already frozen, Ghosts rule the world and are building cities. Current action starts in a human holdout, Edwin in charge. they have some weapons derived from the Barbell that can stop ghosts. He's perfected small teleportation, though the energy cost is high. One shot, he and Rupert teleport up to use the losenge device to travel back in time. They are able to hide themselves from the ghosts (alter phasing) with the barbell. (do they both go back in time together? That'd be an interesting twist). Here we go: Edwin sees something wonderful the Ghosts have made, and is curious. Rupert thinks one of the beings sees them through the cloak. But the thing is really amazing. Choice-point: examine or run?</p>	
 		</article>
 		<form align="center">Question?<br>
 			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
@@ -343,9 +343,9 @@
 		</form>
 	</div>
 
-	<div class="story transform" id="" style="display: none;">
+	<div class="story transform" id="Outlaw" style="display: none;">
 		<article class="basic">
-			<p>Rupert gets them to hold off (sabotage? Give Edwin food poisoning?), and is happy to see the ghosts disperse. Experiment proceeds a few hours later. Moon is away. But still... "it's a trap!" Without the moon to eat, the energy event creates a dense storm of antimatter in orbit. Abandon ship, yadda yadda, years later: the now-heavier Earth-Moon-antimatter-superfund site is drifting sunward, and it's fecking hot. Edwin and Rupert in exile. Ghosts aren't such a prob, cuz they hate the heat. But everyone hates Edwin. Cobbled together a rocket, and he and Rupert go up. Rupert nervous about being detected, edwin says "shhh," I got this." They aren't stopped because they're invited. Of course it's evil Edwin. Rupert will have to kill him.</p>	
+			<p>Rupert gets them to hold off (sabotage? Give Edwin food poisoning?), and is happy to see the ghosts disperse. Experiment proceeds a few hours later. Moon is away. But still... "it's a trap!" Without the moon to eat, the energy event creates a dense storm of antimatter in orbit. Abandon ship, yadda yadda, years later: the now-heavier Earth-Moon-antimatter-superfund site is drifting sunward, and it's fecking hot. Edwin and Rupert in exile. Ghosts aren't such a prob, cuz they hate the heat. But everyone hates Edwin. And some ghost have taken hosts. Edwin's onsessed with tearing that goddamn star down any way he can. Thinks he can do it from the Stone. Break into the last working spark plant, blacks out the continent to power their teleportation. (Rupert confronting self evil as they go, seeing signs of something off with Edwin. Clues that he's posessed.) Get to the Stone. Edwin acrivates teh controls. Rupert sees what looks liek a trajectory between the antimatter mess and the moon. Questions Edwin. This will destroy the black star, destroy them all, finally set us free! Choice is to allow him to proceed, or stop him. </p>	
 		</article>
 		<form align="center">Question?<br>
 			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
@@ -376,113 +376,54 @@
 		<p>Grabs the Torus and runs, ashamed and heartbroken to leave Edwin to die. It tries to interface with him. He isn't familiar with it, but he can feel the monsters, the living structure of the hive. Thinks "don't see me don't see me" and it kinda works. Can't remember the way out, but hides in the losenge room. Nasty monster veins all wrapped around the machine, and he understands it, too, and reaches for the pane.</p>	
 	</article>
 	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
 		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
 	</form>
 </div>
 
-<div class="story transform" id="LoveAndHope" style="display: none;">
+<div class="story transform" id="loveandhope" style="display: none;">
 	<article class="basic">
 		<p>Takes the shot, stops the monster from killing Edwin, and he falls free. But the torus sails wide, and is caught by one of the beasts. It flees, already mutating, and the hive boils in rampant mutation all around them, monsters and spores and viruses engulfing the world.</p>	
 	</article>
 </div>
 
-<div class="story transform" id="five" style="display: none;">
+<div class="story transform" id="focus" style="display: none;">
 	<article class="basic">
-		<p>ff</p>	
+		<p>Rupert grabs Edwin, compels him to drive them ten seconds back. REalize they were close to discovery, and they break for the time chamber and throw the switch together.</p>	
 	</article>
 	<form align="center">Question?<br>
 		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
 	</form>
 </div>
 
-<div class="story transform" id="six" style="display: none;">
+<div class="story transform" id="discovery" style="display: none;">
 	<article class="basic">
-		<p>ff</p>	
+		<p>They are seen, captured, and watch as a rift is opened and an army of beings - ghosts' physical manifestations, long beyond their reach - pour through. </p>
 	</article>
 	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
 	</form>
 </div>
 
-<div class="story transform" id="seven" style="display: none;">
+<div class="story transform" id="stophim" style="display: none;">
 	<article class="basic">
-		<p>ff</p>	
+		<p>Rupert attacks Edwin. He's so, so strong. They fight, Edwin ruthless and strong, clearly posessed, until Rupert kills him. Heartbroken, terrified, he tries to stop the operation. Does something wrong, and the skipping stone accellerates for the antimatter. He's out of time, which thought makes him remember the strange device, and he thinks he understands.</p>	
 	</article>
 	<form align="center">Question?<br>
 		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
 	</form>
 </div>
 
-<div class="story transform" id="eight" style="display: none;">
+<div class="story transform" id="trust" style="display: none;">
 	<article class="basic">
-		<p>ff</p>	
+		<p>Edwin decides to trust him, and he demolishes the moon. Siphons up the energy and uses it to transport the Skipping stone to Mars. There he opens a way, and corporeal ghosts emerge. "It's cold enough here. Cold enough for us. And the Earth is already coming closer. Soon we will be strong, and the world will be close enough, and cold enough, to take."</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
-</div>
-
-<!--fourth tier: the four bad endings-->
-
-<div class="story transform" id="nine" style="display: none;">
-	<article class="basic">
-		<p>techno: experiment off schedule</p>	
-	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
-</div>
-
-<div class="story transform" id="ten" style="display: none;">
-	<article class="basic">
-		<p>techno: experiment off schedule</p>	
-	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
-</div>
-
-<div class="story transform" id="eleven" style="display: none;">
-	<article class="basic">
-		<p>techno: experiment off schedule</p>	
-	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
-</div>
-
-<div class="story transform" id="twelve" style="display: none;">
-	<article class="basic">
-		<p>techno: experiment off schedule</p>	
-	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
 	</form>
 </div>
 
 <!--the hidden ending-->
 
-<div class="story transform" id="hidden ending" style="display: none;">
+<div class="story transform" id="hiddenending" style="display: none;">
 	<article class="basic">
-		<p>An ending that doesn't suck.</p>	
+		<p>Rupert asks Edwin for a boost, jumps up from stirrupped hands to grab the middle of the blur and lands with something. "How stupid are we, to be presented only two choices and believe when we're told they're the only options? Do we really have so little imagination? The stone is here. We have it to stody. And you have the language, And now, at least, we have the knowledge tht we're not alone, that someone out there wants to communicate. That alone is gift enough."</p>	
 	</article>
 	<form align="center">Question?<br>
 		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
@@ -491,10 +432,7 @@
 	</form>
 </div>
 
-
-
-
-<!--The reset button, lets user set the story back to the beginning. An intentionally slow function (meaning it takes a few seconds) that will animate back through the changes.-->
+<!--The reset button, lets user set the story back to the beginning. An intentionally slow function (meaning it takes a few seconds) that will animate back through the changes. I might delete this, from here, and put it at the end of each bad ending.-->
 	<div align="center"><input type="button" value="Reset" onclick="clearance()"></div>
 </main>
 </body>
