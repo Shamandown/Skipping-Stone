@@ -16,11 +16,13 @@ body { background-color: rgb(0, 0, 0);
 
 /*styles regular paragraphs — body of the story — */
 article.basic {font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
 	}	
 	
 article.robot {
     font-family: "Lucida Console", Monaco, monospace;
 	text-indent: 0px;
+	font-size: 16px;
 	}
 	
 div.titlebar{
