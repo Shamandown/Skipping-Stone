@@ -49,6 +49,7 @@ function guessRight(){
 		document.getElementById("falseChoice1").setAttribute("onClick","");
 		document.getElementById("falseChoice2").style.backgroundColor="black";
 		document.getElementById("falseChoice2").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
 		}
 		else{
 			correlation.style.display = "none";
@@ -56,6 +57,7 @@ function guessRight(){
 			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
 			document.getElementById("falseChoice2").style.backgroundColor="";
 			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
+			document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
 			}
 	}	
 	
@@ -68,6 +70,7 @@ function guessWrong(){
 		document.getElementById("falseChoice1").setAttribute("onClick","");
 		document.getElementById("falseChoice2").style.backgroundColor="black";
 		document.getElementById("falseChoice2").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
 		}
 		else{
 			noClue.style.display = "none";
@@ -75,6 +78,7 @@ function guessWrong(){
 			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
 			document.getElementById("falseChoice2").style.backgroundColor="";
 			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
+			document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
 			}
 	}		
 
@@ -87,6 +91,7 @@ function enter(){
 		document.getElementById("enterChoice").setAttribute("onClick","");
 		document.getElementById("death2Choice").style.backgroundColor="black";
 		document.getElementById("death2Choice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-enter.jpg)";
 		}
 		else{
 			goInside.style.display = "none";
@@ -94,6 +99,7 @@ function enter(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
+			document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
 			}
 	}		
 
@@ -106,6 +112,7 @@ function death2(){
 		document.getElementById("enterChoice").setAttribute("onClick","");
 		document.getElementById("death2Choice").style.backgroundColor="black";
 		document.getElementById("death2Choice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-keepout.jpg)";
 		}
 		else{
 			stayOut.style.display = "none";
@@ -113,6 +120,7 @@ function death2(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
+			document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
 			}
 	}		
 
@@ -125,6 +133,7 @@ function death3(){
 		document.getElementById("death3Choice").setAttribute("onClick","");
 		document.getElementById("upperRoomChoice").style.backgroundColor="black";
 		document.getElementById("upperRoomChoice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-Death3.jpg)";
 		}
 		else{
 			nastyNode.style.display = "none";
@@ -132,6 +141,7 @@ function death3(){
 			document.getElementById("death3Choice").setAttribute("onClick","death3()");
 			document.getElementById("upperRoomChoice").style.backgroundColor="";
 			document.getElementById("upperRoomChoice").setAttribute("onClick","upperRoom()");
+			document.body.style.backgroundImage = "url(BGPH-enter.jpg)";
 			}
 	}	
 
@@ -144,6 +154,7 @@ function upperRoom(){
 		document.getElementById("death3Choice").setAttribute("onClick","");
 		document.getElementById("upperRoomChoice").style.backgroundColor="black";
 		document.getElementById("upperRoomChoice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-choices.jpg)";
 		}
 		else{
 			goUp.style.display = "none";
@@ -151,6 +162,7 @@ function upperRoom(){
 			document.getElementById("death3Choice").setAttribute("onClick","death3()");
 			document.getElementById("upperRoomChoice").style.backgroundColor="";
 			document.getElementById("upperRoomChoice").setAttribute("onClick","upperRoom()");
+			document.body.style.backgroundImage = "url(BGPH-enter.jpg)";
 			}
 	}	
 	
