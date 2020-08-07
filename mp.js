@@ -2,18 +2,20 @@ function adrift(){
 	var adrift = document.getElementById("adrift");
 	var landing = document.getElementById("landing");
 		if (adrift.style.display == "none" && landing.style.display == "none"){
-		adrift.style.display = "block";
-		document.getElementById("death1Choice").style.backgroundColor="black";
+		adrift.style.display = "block";/*if the story divs named adrift and landing are both not showing, change adrift to show*/
+		document.getElementById("death1Choice").style.backgroundColor="black"; /*changes both buttons to black, and deactivates their functions*/
 		document.getElementById("death1Choice").setAttribute("onClick","");
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-adrift.jpg)";/*changes the background image to the one that goes with adrift story section*/
 		}
-		else{
+		else{/*the else portions of these functions happen with reset and revert processes. When the programs run again, if story sections are showing, they will be hidden, and changes reversed.*/
 			adrift.style.display = "none";
-			document.getElementById("death1Choice").style.backgroundColor="";
+			document.getElementById("death1Choice").style.backgroundColor="";/*these 4 lines restore the buttons to default appearance (not blacked out) and restore the functionality.*/
 			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
+			document.body.style.backgroundImage = "url(BGPH-main.jpg)";/*changes the bg image back to the bgimage belonging to the next tier up.*/
 			}
 	}
 	
@@ -26,6 +28,7 @@ function landing(){
 		document.getElementById("death1Choice").setAttribute("onClick","");
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
 		}
 		else{
 			landing.style.display = "none";
@@ -33,6 +36,7 @@ function landing(){
 			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
+			document.body.style.backgroundImage = "url(BGPH-main.jpg)";
 			}
 	}
 	
