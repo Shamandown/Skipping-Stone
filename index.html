@@ -67,11 +67,11 @@
 		
 		<!--a centered form with a question, with 2 buttons below. Clicking each will call
 		new div with story segment and next choice to appear. only 1 of the two can appear at a time-->
-		<form align="center">Hitch a ride on the Skipping Stone?<br>
-			<input type="button" id="death1Choice" value="Abort"  onclick="adrift()" />
-				-----
-			<input type="button" id="landingChoice" value="Land" onclick="landing()"/>
-		</form>
+		<div align="center"><form>Hitch a ride on the Skipping Stone?<br>
+			<input type="button" class="storynav" id="death1Choice" value="Abort"  onclick="adrift()" />
+			-----
+			<input type="button" class="storynav" id="landingChoice" value="Land" onclick="landing()"/>
+		</form></div>
 	</div>
 
 	<div class="story transform" id="adrift" style="display: none;">
@@ -105,11 +105,11 @@
 			</p><p>“Laborious deduction, dear Coppens. Everyone was studying the Stone every which way, so I looked where they weren’t.” He ticked points off his fingers as he professed his genius. “Firstly: every responsible scientist and agency was being so careful to treat this thing as a natural anomaly, soooo hesitant to even dare to whisper that there might be intelligence involved until we had evidence to back the claim. I tossed that out. I mean, look at its behaviors, its capabilities. The simplest, most logical explanation is that it’s not a coincidental wanderer, that it <em>wants</em> to come to Earth. Secondly: from its first turn about Neptune, we noted that its change in velocity couldn’t be accounted for by aerobraking and gravitational drag alone. But then it skipped and everyone myopically focused on <em>that</em>. I looked back at the worlds the Stone had passed over and looked for changes picked up by our probes. On each world I found a minute —really just very very tiny — increase in the rotational period, and a similarly teensy drop in the world’s gravitational pull. And do you know what I found?”
 			</p>
 		</article>
-		<form align="center">Take a guess?<br>
-			<input type="button" id="falseChoice1" value="You found a correlation?"  onclick="guessRight()" />
+		<div align="center"><form>Take a guess?<br>
+			<input type="button"  class="storynav" id="falseChoice1" value="You found a correlation?"  onclick="guessRight()" />
 			-----
-			<input type="button" id="falseChoice2" value="Not a bloody clue, mate." onclick="guessWrong()"/>
-		</form>
+			<input type="button"  class="storynav" id="falseChoice2" value="Not a bloody clue, mate." onclick="guessWrong()"/>
+		</form></div>
 	</div>
 		
 	<div class="story transform" id="correlation" style="display: none;">
@@ -135,11 +135,11 @@
 			</p><p>“Yours,” said Edwin, “Or theirs?” He let that hang in the air for a moment, then swept his hand toward the doorway and said, “Shall we?”
 			</p>
 		</article>
-		<form align="center">Enter the doorway?<br>
-			<input type="button" id="enterChoice" value="Why not?"  onclick="enter()" />
+		<div align="center"><form>Enter the doorway?<br>
+			<input type="button" class="storynav" id="enterChoice" value="Why not?"  onclick="enter()" />
 			-----
-			<input type="button" id="death2Choice" value="Absolutely not!" onclick="death2()"/>
-		</form>
+			<input type="button" class="storynav" id="death2Choice" value="Absolutely not!" onclick="death2()"/>
+		</form></div>
 	</div>
 		
 	<div class="story transform" id="noClue" style="display: none;">
@@ -165,11 +165,11 @@
 			</p><p>“Yours,” said Edwin, “Or theirs?” He let that hang in the air for a moment, then swept his hand toward the doorway and said, “Shall we?”
 			</p>
 		</article>
-		<form align="center">Enter the doorway?<br>
-			<input type="button" id="enterChoice" value="Why not?"  onclick="enter()" />
+		<div align="center"><form>Enter the doorway?<br>
+			<input type="button" class="storynav" id="enterChoiceb" value="Why not?"  onclick="enterb()" />
 			-----
-			<input type="button" id="death2Choice" value="Absolutely not!" onclick="death2()"/>
-		</form>
+			<input type="button" class="storynav" id="death2Choiceb" value="Absolutely not!" onclick="death2b()"/>
+		</form></div>
 	</div>	
 		
 	<div class="story transform" id="enter" style="display: none;">
@@ -206,11 +206,11 @@
 			</p><p>“Seriously,” I groaned to myself, “What's gotten into him?” He was already out the door, and I hustled after him. I stopped when a glimmer of light caught the corner of my eye. It was on the other side of the artifact, near where I had been standing opposite Edwin. I turned to look; it was a diaphanous uncurling drape of blue-violet, uncurling in the air like a silk drape in the breeze. It vanished when I turned to look at it head-on, and I took it for a flare on my helm's visor. But then it appeared again, a little closer, a little better defined, faint brilliances pulsing though empty air, defining a shape perhaps like a polyp, or perhaps like a vehicle's control yoke... made of lace and light. It's not a great metaphor, I know. It was a shifting, amorphous thing, but it was there, not two meters away and drifting closer.
 			</p>
 		</article>
-		<form align="center">How do you react?<br>
-			<input type="button" id="death3Choice" value="What the devil?"  onclick="death3()" />
+		<div align="center"><form>How do you react?<br>
+			<input type="button" class="storynav" id="death3Choice" value="What the devil?"  onclick="death3()" />
 			-----
-			<input type="button" id="upperRoomChoice" value="Sod this!" onclick="upperRoom()"/>
-		</form>
+			<input type="button" class="storynav" id="upperRoomChoice" value="Sod this!" onclick="upperRoom()"/>
+		</form></div>
 	</div>
 			
 	<div class="story transform" id="death2" style="display: none;">
@@ -290,22 +290,22 @@
 		<article class="basic">
 			<p>Bio-Geiger horrorshow. Skipping stone goes on a collision course. Ship goes all fleshy and putrid. Dark orbs hatch bad bad things. Spermy cockroaches. Torus keeps trying to merge with Edwin's flesh. They run through the mess. Edwin thinks he can feel the beasts, sense them, control them through the torus. Choice-point: let him try or bug the hell out?</p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 	<div class="story transform" id="Barbell" style="display: none;">
 		<article class="basic">
 			<p>Skipping stone transforms into a shuny techno-crystal-chrome wonderland. inserts into stable orbit. Time passes, station is built in and around stone. Edwin leads parellel lines of research into maniulation of matter, energy, time, place, opening up new ways to erase all those borders. Controls Skipping stone's data and mechanisms with the barbell, which has morphed intoa game controller-thing, which he sometimes wears on his head. Like a PS controller that can grab your skull. What could go wrong? Also the ghosts are around, harmless, on rare occasions helpful. The big experiment will be using the skipping stone to teleport something big. Rupert gets nervous at ghosts gathering, the way they seem excited. Doesn't like that the moon seems to be on the same line of sight as the target. Choice-point: let it happen or interfere/delay?</p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 <!--second tier of divergence: 4 paths total, 2 branching from the biohorror and 2 branching from technothriller-->
@@ -314,44 +314,44 @@
 		<article class="basic">
 			<p>bio:control monsters, land with stone. Manages to change the code to make the Director really stupid. Will take some time to re-develop sentience. Monsters rush the world. Edwin sets up a lab near the hive. Avoids the beasts with the torus. Does experiments on them and people. Rupert is shattered and controllable, goes full-Igor. When Edwin is ready, they go into the Hive. He says to stop them, but then it turns out he wants to merge with the Director and re-elevate it, take full control. Choice-point: Enable or betray. (maybe there's monster-hunters targeting him, and Rupert can assist them or stop them.)</p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 	<div class="story transform" id="MonsterHunter" style="display: none;">
 		<article class="basic">
 			<p>Escape in the shuttle, land outside ground zero where stone lands and becomes hive. Witness storm of monsters. Time passes. They are monster hunters, Enclave protected with brute force and some weapons derived from the Torus. Edwin delivers statement, "No matter what, don't let the monsters get the Torus." They storm the hive for the final kill. He has learned enough about the thing to use it to kill the Director. The whole operation goes pear-shaped, Edwin is in the clutches of the Director. it's about to kill him. Rupert has a shot. Edwin throws him the Torus. Choice-point. Catch the thing or take the shot?</p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 	<div class="story transform" id="IcedEarth" style="display: none;">
 		<article class="basic">
 			<p>Rupert doesn't interfere, is as curious and excited as Edwin, and cue Akbar because of course "It's a trap!" The apparatus converts the target cargo into energy, which it launches into the moon. The moon comes apart, most of its matter vanishing into an implosion, some scattered debris hurtling at the Skipping Stone and Earth. Abandon ship. Years pass, quickly evident that the event pulled earth off course and, now that the system is deprived of the moon's mass, it will settle into a wider orbit. Between that and the impact dust, Earth is already frozen, Ghosts rule the world and are building cities. Current action starts in a human holdout, Edwin in charge. they have some weapons derived from the Barbell that can stop ghosts. He's perfected small teleportation, though the energy cost is high. One shot, he and Rupert teleport up to use the losenge device to travel back in time. They are able to hide themselves from the ghosts (alter phasing) with the barbell. (do they both go back in time together? That'd be an interesting twist). Here we go: Edwin sees something wonderful the Ghosts have made, and is curious. Rupert thinks one of the beings sees them through the cloak. But the thing is really amazing. Choice-point: examine or run?</p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 	<div class="story transform" id="Outlaw" style="display: none;">
 		<article class="basic">
 			<p>Rupert gets them to hold off (sabotage? Give Edwin food poisoning?), and is happy to see the ghosts disperse. Experiment proceeds a few hours later. Moon is away. But still... "it's a trap!" Without the moon to eat, the energy event creates a dense storm of antimatter in orbit. Abandon ship, yadda yadda, years later: the now-heavier Earth-Moon-antimatter-superfund site is drifting sunward, and it's fecking hot. Edwin and Rupert in exile. Ghosts aren't such a prob, cuz they hate the heat. But everyone hates Edwin. And some ghost have taken hosts. Edwin's onsessed with tearing that goddamn star down any way he can. Thinks he can do it from the Stone. Break into the last working spark plant, blacks out the continent to power their teleportation. (Rupert confronting self evil as they go, seeing signs of something off with Edwin. Clues that he's posessed.) Get to the Stone. Edwin acrivates teh controls. Rupert sees what looks liek a trajectory between the antimatter mess and the moon. Questions Edwin. This will destroy the black star, destroy them all, finally set us free! Choice is to allow him to proceed, or stop him. </p>	
 		</article>
-		<form align="center">Question?<br>
-			<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+		<div align="center"><form>Question?<br>
+			<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 			-----
-			<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-		</form>
+			<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+		</form></div>
 	</div>
 
 <!--Third tier, 8 segments, 4 bad endings, 4 reverts with clues-->
@@ -366,18 +366,18 @@
 	<article class="basic">
 		<p>Rupert tries to stop edwin. Scuffle and whatnot, and he gets thrown down into the losenge chamber (rotten structure). Back broken across the device, but sees it activate. single choice: activate it.</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-	</form>
+	<div align="center"><form>Question?<br>
+		<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
+	</form></div>
 </div>
 
 <div class="story transform" id="NoMatterWhat" style="display: none;">
 	<article class="basic">
 		<p>Grabs the Torus and runs, ashamed and heartbroken to leave Edwin to die. It tries to interface with him. He isn't familiar with it, but he can feel the monsters, the living structure of the hive. Thinks "don't see me don't see me" and it kinda works. Can't remember the way out, but hides in the losenge room. Nasty monster veins all wrapped around the machine, and he understands it, too, and reaches for the pane.</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
+	<div align="center"><form>Question?<br>
+		<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+	</form></div>
 </div>
 
 <div class="story transform" id="loveandhope" style="display: none;">
@@ -390,26 +390,26 @@
 	<article class="basic">
 		<p>Rupert grabs Edwin, compels him to drive them ten seconds back. REalize they were close to discovery, and they break for the time chamber and throw the switch together.</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-	</form>
+	<div align="center"><form>Question?<br>
+		<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
+	</form></div>
 </div>
 
 <div class="story transform" id="discovery" style="display: none;">
 	<article class="basic">
 		<p>They are seen, captured, and watch as a rift is opened and an army of beings - ghosts' physical manifestations, long beyond their reach - pour through. </p>
 	</article>
-	<form align="center">Question?<br>
-	</form>
+	<div align="center"><form>Question?<br>
+	</form></div>
 </div>
 
 <div class="story transform" id="stophim" style="display: none;">
 	<article class="basic">
 		<p>Rupert attacks Edwin. He's so, so strong. They fight, Edwin ruthless and strong, clearly posessed, until Rupert kills him. Heartbroken, terrified, he tries to stop the operation. Does something wrong, and the skipping stone accellerates for the antimatter. He's out of time, which thought makes him remember the strange device, and he thinks he understands.</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
-	</form>
+	<div align="center"><form>Question?<br>
+		<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
+	</form></div>
 </div>
 
 <div class="story transform" id="trust" style="display: none;">
@@ -425,15 +425,15 @@
 	<article class="basic">
 		<p>Rupert asks Edwin for a boost, jumps up from stirrupped hands to grab the middle of the blur and lands with something. "How stupid are we, to be presented only two choices and believe when we're told they're the only options? Do we really have so little imagination? The stone is here. We have it to stody. And you have the language, And now, at least, we have the knowledge tht we're not alone, that someone out there wants to communicate. That alone is gift enough."</p>	
 	</article>
-	<form align="center">Question?<br>
-		<input type="button" id="ID" value="text on button"  onclick="whuzzit()" />
+	<div align="center"><form>Question?<br>
+		<input type="button" class="storynav" id="ID" value="text on button"  onclick="whuzzit()" />
 		-----
-		<input type="button" id="ID" value="text on button" onclick="whuzzit()"/>
-	</form>
+		<input type="button" class="storynav" id="ID" value="text on button" onclick="whuzzit()"/>
+	</form></div>
 </div>
 
 <!--The reset button, lets user set the story back to the beginning. An intentionally slow function (meaning it takes a few seconds) that will animate back through the changes. I might delete this, from here, and put it at the end of each bad ending.-->
-	<div align="center"><input type="button" value="Reset" onclick="clearance()"></div>
+	<div align="center"><input type="button" class="storynav" value="Reset" onclick="clearance()"></div>
 </main>
 </body>
 </html>

@@ -124,6 +124,48 @@ function death2(){
 			}
 	}		
 
+	function enterb(){
+		var goInside = document.getElementById("enter");
+		var stayOut = document.getElementById("death2");
+			if (goInside.style.display == "none" && stayOut.style.display == "none"){
+			goInside.style.display = "block";
+			document.getElementById("enterChoiceb").style.backgroundColor="black";
+			document.getElementById("enterChoiceb").setAttribute("onClick","");
+			document.getElementById("death2Choiceb").style.backgroundColor="black";
+			document.getElementById("death2Choiceb").setAttribute("onClick","");
+			document.body.style.backgroundImage = "url(BGPH-enter.jpg)";
+			}
+			else{
+				goInside.style.display = "none";
+				document.getElementById("enterChoiceb").style.backgroundColor="";
+				document.getElementById("enterChoiceb").setAttribute("onClick","enter()");
+				document.getElementById("death2Choiceb").style.backgroundColor="";
+				document.getElementById("death2Choiceb").setAttribute("onClick","death2()");
+				document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+				}
+		}		
+	
+	function death2b(){
+		var goInside = document.getElementById("enter");
+		var stayOut = document.getElementById("death2");
+			if (goInside.style.display == "none" && stayOut.style.display == "none"){
+			stayOut.style.display = "block";
+			document.getElementById("enterChoiceb").style.backgroundColor="black";
+			document.getElementById("enterChoiceb").setAttribute("onClick","");
+			document.getElementById("death2Choiceb").style.backgroundColor="black";
+			document.getElementById("death2Choiceb").setAttribute("onClick","");
+			document.body.style.backgroundImage = "url(BGPH-keepout.jpg)";
+			}
+			else{
+				stayOut.style.display = "none";
+				document.getElementById("enterChoiceb").style.backgroundColor="";
+				document.getElementById("enterChoiceb").setAttribute("onClick","enter()");
+				document.getElementById("death2Choiceb").style.backgroundColor="";
+				document.getElementById("death2Choiceb").setAttribute("onClick","death2()");
+				document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+				}
+		}		
+
 function death3(){
 	var nastyNode = document.getElementById("death3");
 	var goUp = document.getElementById("upperRoom");

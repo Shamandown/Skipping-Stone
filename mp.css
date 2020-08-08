@@ -14,6 +14,35 @@ body { background-color: rgb(0, 0, 0);
 			transition: all 20s linear;
 	}
 
+form {font-family:"Comic Sans MS", cursive, sans-serif;
+	font-size: large;
+	background-color: white;
+	color: black;
+	border: 2px solid #68e3ff;	
+	border-radius: 8px;
+	padding: 16px 32px;
+	display: inline-block;
+	align: middle;
+	}
+
+.storynav {font-size: large;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+	background-color: white;
+	color: black;
+	border: 2px solid #68e3ff;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	border-radius: 8px;
+	}
+
+.storynav:hover {background-color: #68e3ff;
+	color: white;}
+
 /*styles regular paragraphs — body of the story — */
 article.basic {font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size: large;
@@ -118,5 +147,6 @@ div.bar {
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+	.sidenav a {font-size: 18px;}
+	.sidenav p {font-size: 18px;}
 }
