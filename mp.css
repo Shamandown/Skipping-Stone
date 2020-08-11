@@ -1,4 +1,4 @@
-/*sets the bg and text color of items marked as class all. just the body in this case*/
+/*sets the bg and text color of the body. Main work here is the initial background image, and transformation speed.*/
 body { background-color: rgb(0, 0, 0);
 	color:rgb(255, 255, 255);
 	font-family: ;
