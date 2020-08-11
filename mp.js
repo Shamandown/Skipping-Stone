@@ -1,9 +1,3 @@
-/* hopefully make the story panes fade away when hovering over keywords, and come back when not hovering*/
-function view(){
-	var z = document.getElementsByClassName("story");
-	z.style.backgroundColor = "rgba(0, 0, 0, 0)";
-	}
-
 function adrift(){
 	var adrift = document.getElementById("adrift");
 	var landing = document.getElementById("landing");
