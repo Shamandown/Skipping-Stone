@@ -63,9 +63,14 @@ div.titlebar{
 	width: 100%;
 	}
 	
-h1.title{
+h1{
 	color: white;
 	font-size: 4vh;
+	text-align: center;
+	}
+h2{
+	color: white;
+	font-size: 3vh;
 	text-align: center;
 	}
 
