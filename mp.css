@@ -60,7 +60,12 @@ div.titlebar{
 	background-color: rgba(0,0,0,0.7);
 	box-shadow: inset 5px 5px 2px white, inset -5px -5px 2px grey;
 	width: 100%;
-    padding: 0.5%;
+	text-align: center;
+	padding-bottom: 2vh;
+	}
+
+div.dummydiv{
+	margin: 0 auto;
 	}
 	
 h1.title{
@@ -76,7 +81,7 @@ h2.author{
 	color: white;
 	font-size: 3vh;
 	text-align: center;
-	line-height: 4vh;
+	line-height: 3vh;
 	}
 
 /*sets how elements marked with the class "transform" will transform, if they are transformed.*/
