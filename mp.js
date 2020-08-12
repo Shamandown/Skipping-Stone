@@ -8,7 +8,7 @@ function adrift(){
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
 		document.body.style.backgroundImage = "url(images/BGPH-adrift.jpg)";/*changes the background image to the one that goes with adrift story section*/
-		}
+	}
 		else{/*the else portions of these functions happen with reset and revert processes. When the programs run again, if story sections are showing, they will be hidden, and changes reversed.*/
 			adrift.style.display = "none";
 			document.getElementById("death1Choice").style.backgroundColor="";/*these 4 lines restore the buttons to default appearance (not blacked out) and restore the functionality.*/
@@ -16,7 +16,7 @@ function adrift(){
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
 			document.body.style.backgroundImage = "url(images/BGPH-main.jpg)";/*changes the bg image back to the bgimage belonging to the next tier up.*/
-			}
+		}
 	}
 	
 function landing(){
