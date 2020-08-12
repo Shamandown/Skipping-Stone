@@ -56,11 +56,11 @@ article.robot {
 	
 div.titlebar{
 	position:fixed;
-	height: 7%;
+	height: 13%;
 	background-color: rgba(0,0,0,0.7);
 	box-shadow: inset 5px 5px 2px white, inset -5px -5px 2px grey;
-	padding-bottom: 15px;
 	width: 100%;
+    padding: 0.5%;
 	}
 	
 h1.title{
@@ -68,6 +68,15 @@ h1.title{
 	color: white;
 	font-size: 4vh;
 	text-align: center;
+	line-height: 4vh;
+	}
+
+h2.author{
+	font-family: 'Montserrat Subrayada';
+	color: white;
+	font-size: 3vh;
+	text-align: center;
+	line-height: 4vh;
 	}
 
 /*sets how elements marked with the class "transform" will transform, if they are transformed.*/
@@ -81,7 +90,7 @@ h1.title{
 
 div.spacer{
 	width:100%;
-	height:110px;
+	height:14vh;
 	background-color: rgba(0,0,0,0.0);
 	}
 
