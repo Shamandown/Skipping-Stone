@@ -7,7 +7,7 @@ function adrift(){
 		document.getElementById("death1Choice").setAttribute("onClick","");
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-adrift.jpg)";/*changes the background image to the one that goes with adrift story section*/
+		document.body.style.backgroundImage = "url(images/BGPH-adrift.jpg)";/*changes the background image to the one that goes with adrift story section*/
 		}
 		else{/*the else portions of these functions happen with reset and revert processes. When the programs run again, if story sections are showing, they will be hidden, and changes reversed.*/
 			adrift.style.display = "none";
@@ -15,7 +15,7 @@ function adrift(){
 			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
-			document.body.style.backgroundImage = "url(BGPH-main.jpg)";/*changes the bg image back to the bgimage belonging to the next tier up.*/
+			document.body.style.backgroundImage = "url(images/BGPH-main.jpg)";/*changes the bg image back to the bgimage belonging to the next tier up.*/
 			}
 	}
 	
@@ -28,7 +28,7 @@ function landing(){
 		document.getElementById("death1Choice").setAttribute("onClick","");
 		document.getElementById("landingChoice").style.backgroundColor="black";
 		document.getElementById("landingChoice").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
+		document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
 		}
 		else{
 			landing.style.display = "none";
@@ -36,7 +36,7 @@ function landing(){
 			document.getElementById("death1Choice").setAttribute("onClick","adrift()");
 			document.getElementById("landingChoice").style.backgroundColor="";
 			document.getElementById("landingChoice").setAttribute("onClick","landing()");
-			document.body.style.backgroundImage = "url(BGPH-main.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-main.jpg)";
 			}
 	}
 	
@@ -49,7 +49,7 @@ function guessRight(){
 		document.getElementById("falseChoice1").setAttribute("onClick","");
 		document.getElementById("falseChoice2").style.backgroundColor="black";
 		document.getElementById("falseChoice2").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+		document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 		}
 		else{
 			correlation.style.display = "none";
@@ -57,7 +57,7 @@ function guessRight(){
 			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
 			document.getElementById("falseChoice2").style.backgroundColor="";
 			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
-			document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
 			}
 	}	
 	
@@ -70,7 +70,7 @@ function guessWrong(){
 		document.getElementById("falseChoice1").setAttribute("onClick","");
 		document.getElementById("falseChoice2").style.backgroundColor="black";
 		document.getElementById("falseChoice2").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+		document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 		}
 		else{
 			noClue.style.display = "none";
@@ -78,7 +78,7 @@ function guessWrong(){
 			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
 			document.getElementById("falseChoice2").style.backgroundColor="";
 			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
-			document.body.style.backgroundImage = "url(BGPH-landing.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
 			}
 	}		
 
@@ -91,7 +91,7 @@ function enter(){
 		document.getElementById("enterChoice").setAttribute("onClick","");
 		document.getElementById("death2Choice").style.backgroundColor="black";
 		document.getElementById("death2Choice").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-enter.jpg)";
+		document.body.style.backgroundImage = "url(images/BGPH-enter.jpg)";
 		}
 		else{
 			goInside.style.display = "none";
@@ -99,7 +99,7 @@ function enter(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
-			document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 			}
 	}		
 
@@ -112,7 +112,7 @@ function death2(){
 		document.getElementById("enterChoice").setAttribute("onClick","");
 		document.getElementById("death2Choice").style.backgroundColor="black";
 		document.getElementById("death2Choice").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(BGPH-keepout.jpg)";
+		document.body.style.backgroundImage = "url(images/BGPH-keepout.jpg)";
 		}
 		else{
 			stayOut.style.display = "none";
@@ -120,7 +120,7 @@ function death2(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
-			document.body.style.backgroundImage = "url(BGPH-correlation.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 			}
 	}		
 
