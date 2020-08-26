@@ -1,3 +1,6 @@
+/* This little nugget should let me control the animation speed with each function. gradual for ifs (forward) faster for elses (reverts)
+document.getElementById("myDIV").style.animationDuration = "1s"; */
+
 function adrift(){
 	var adrift = document.getElementById("adrift");
 	var landing = document.getElementById("landing");
