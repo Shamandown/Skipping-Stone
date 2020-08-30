@@ -141,9 +141,9 @@ function death2(){
 			else{
 				goInside.style.display = "none";
 				document.getElementById("enterChoiceb").style.backgroundColor="";
-				document.getElementById("enterChoiceb").setAttribute("onClick","enter()");
+				document.getElementById("enterChoiceb").setAttribute("onClick","enterb()");
 				document.getElementById("death2Choiceb").style.backgroundColor="";
-				document.getElementById("death2Choiceb").setAttribute("onClick","death2()");
+				document.getElementById("death2Choiceb").setAttribute("onClick","death2b()");
 				document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 				}
 		}		
@@ -157,14 +157,14 @@ function death2(){
 			document.getElementById("enterChoiceb").setAttribute("onClick","");
 			document.getElementById("death2Choiceb").style.backgroundColor="black";
 			document.getElementById("death2Choiceb").setAttribute("onClick","");
-			document.body.style.backgroundImage = "urlimages/(BGPH-keepout.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-keepout.jpg)";
 			}
 			else{
 				stayOut.style.display = "none";
 				document.getElementById("enterChoiceb").style.backgroundColor="";
-				document.getElementById("enterChoiceb").setAttribute("onClick","enter()");
+				document.getElementById("enterChoiceb").setAttribute("onClick","enterb()");
 				document.getElementById("death2Choiceb").style.backgroundColor="";
-				document.getElementById("death2Choiceb").setAttribute("onClick","death2()");
+				document.getElementById("death2Choiceb").setAttribute("onClick","death2b()");
 				document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 				}
 		}		
@@ -210,25 +210,98 @@ function upperRoom(){
 			document.body.style.backgroundImage = "url(images/BGPH-enter.jpg)";
 			}
 	}	
-	
+// First tier of divergent choices
+
+function donut(){
+	var barbell = document.getElementById("barbell");
+	var torus = document.getElementById("torus");
+		if (barbell.style.display == "none" && torus.style.display == "none"){
+		torus.style.display = "block";
+		document.getElementById("dumbellChoice").style.backgroundColor="black";
+		document.getElementById("dumbellChoice").setAttribute("onClick","");
+		document.getElementById("donutChoice").style.backgroundColor="black";
+		document.getElementById("donutChoice").setAttribute("onClick","");
+		document.body.style.backgroundImage = "url(images/BGPH-torus.jpg)";
+		}
+		else{
+			torus.style.display = "none";
+			document.getElementById("dumbellChoice").style.backgroundColor="";
+			document.getElementById("dumbellChoice").setAttribute("onClick","dumbell()");
+			document.getElementById("donutChoice").style.backgroundColor="";
+			document.getElementById("donutChoice").setAttribute("onClick","donut()");
+			document.body.style.backgroundImage = "url(images/BGPH-choices.jpg)";
+		}
+	}
+
+	function dumbell(){
+		var barbell = document.getElementById("barbell");
+		var torus = document.getElementById("torus");
+			if (barbell.style.display == "none" && torus.style.display == "none"){
+			barbell.style.display = "block";
+			document.getElementById("dumbellChoice").style.backgroundColor="black";
+			document.getElementById("dumbellChoice").setAttribute("onClick","");
+			document.getElementById("donutChoice").style.backgroundColor="black";
+			document.getElementById("donutChoice").setAttribute("onClick","");
+			document.body.style.backgroundImage = "url(images/BGPH-barbell.jpg)";
+			}
+			else{
+				barbell.style.display = "none";
+				document.getElementById("dumbellChoice").style.backgroundColor="";
+				document.getElementById("dumbellChoice").setAttribute("onClick","dumbell()");
+				document.getElementById("donutChoice").style.backgroundColor="";
+				document.getElementById("donutChoice").setAttribute("onClick","donut()");
+				document.body.style.backgroundImage = "url(images/BGPH-choices.jpg)";
+			}
+		}
+
+
+
+// // Template for story progression functions
+// function funcname(){
+// 	var pathnottaken = document.getElementById("idofnottaken");
+// 	var pathtaken = document.getElementById("idoftaken");
+// 		if (nottaken.style.display == "none" && taken.style.display == "none"){
+// 		taken.style.display = "block";
+// 		document.getElementById("buttonnottaken").style.backgroundColor="black";
+// 		document.getElementById("buttonnottaken").setAttribute("onClick","");
+// 		document.getElementById("buttontaken").style.backgroundColor="black";
+// 		document.getElementById("buttontaken").setAttribute("onClick","");
+// 		document.body.style.backgroundImage = "url(images/newbgimg.jpg)";
+// 		}
+// 		else{
+// 			taken.style.display = "none";
+// 			document.getElementById("buttonnottaken").style.backgroundColor="";
+// 			document.getElementById("buttonnottaken").setAttribute("onClick","restorefunc()");
+// 			document.getElementById("buttontaken").style.backgroundColor="";
+// 			document.getElementById("buttontaken").setAttribute("onClick","restorefunc()");
+//			document.body.style.backgroundImage = "url(images/parentbgimg.jpg)";
+// 		}
+// 	}
+
 /*will clear out all the selected paths, hopefully progressively from the bottom up
 As I add tiers to the story, need to change the timeout on each level so the lowest level goes last
 This will get mo funky when I really start branching, and when branches ad more transformations to the page, which need to be trnasformed back*/
 function clearance(){
-	if(document.getElementById("death3").style.display == "block"){death3();}
-	if(document.getElementById("upperRoom").style.display == "block"){upperRoom();}
+	if(document.getElementById("torus").style.display == "block"){donut();}
+	if(document.getElementById("barbell").style.display == "block"){dumbell();}
 		setTimeout(function () {
-		if(document.getElementById("enter").style.display == "block"){enter();}
-		if(document.getElementById("death2").style.display == "block"){death2();}
-		}, 1000);
+		if(document.getElementById("death3").style.display == "block"){death3();}
+		if(document.getElementById("upperRoom").style.display == "block"){upperRoom();}
+		}, 500);
 			setTimeout(function () {
-			if(document.getElementById("correlation").style.display == "block"){guessRight();}
-			if(document.getElementById("noClue").style.display == "block"){guessWrong();}
-			}, 2000);
+			if(document.getElementById("enter").style.display == "block"){enter();}
+			if(document.getElementById("enter").style.display == "block"){enterb();}
+			if(document.getElementById("death2").style.display == "block"){death2();}
+			if(document.getElementById("death2").style.display == "block"){death2b();}
+			}, 1000);
 				setTimeout(function () {
-				if(document.getElementById("adrift").style.display == "block"){adrift();}
-				if(document.getElementById("landing").style.display == "block"){landing();}
-				}, 3000);
+				if(document.getElementById("correlation").style.display == "block"){guessRight();}
+				if(document.getElementById("noClue").style.display == "block"){guessWrong();}
+				}, 1500);
+					setTimeout(function () {
+					if(document.getElementById("adrift").style.display == "block"){adrift();}
+					if(document.getElementById("landing").style.display == "block"){landing();}
+					}, 2000);
 }
 
 	/* Set the width of the side navigation to 250px */
