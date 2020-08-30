@@ -7,11 +7,11 @@ body { background-color: rgb(0, 0, 0);
 		background-position: center center;
 		background-attachment: fixed;
 		background-size: cover;
-			-webkit-transition: all 2s linear;
-			-moz-transition: all 2s linear;
-			-o-transition: all 2s linear;
-			-ms-transition: all 2s linear;
-			transition: all 2s linear;
+			-webkit-transition: all 1s linear;
+			-moz-transition: all 1s linear;
+			-o-transition: all 1s linear;
+			-ms-transition: all 1s linear;
+			transition: all 1s linear;
 	}
 
 form {font-family:"Comic Sans MS", cursive, sans-serif;

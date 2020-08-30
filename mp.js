@@ -43,48 +43,6 @@ function landing(){
 			}
 	}
 	
-function guessRight(){
-	var correlation = document.getElementById("correlation");
-	var noClue = document.getElementById("noClue");
-		if (correlation.style.display == "none" && noClue.style.display == "none"){
-		correlation.style.display = "block";
-		document.getElementById("falseChoice1").style.backgroundColor="black";
-		document.getElementById("falseChoice1").setAttribute("onClick","");
-		document.getElementById("falseChoice2").style.backgroundColor="black";
-		document.getElementById("falseChoice2").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
-		}
-		else{
-			correlation.style.display = "none";
-			document.getElementById("falseChoice1").style.backgroundColor="";
-			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
-			document.getElementById("falseChoice2").style.backgroundColor="";
-			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
-			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
-			}
-	}	
-	
-function guessWrong(){
-	var correlation = document.getElementById("correlation");
-	var noClue = document.getElementById("noClue");
-		if (noClue.style.display == "none" && correlation.style.display == "none"){
-		noClue.style.display = "block";
-		document.getElementById("falseChoice1").style.backgroundColor="black";
-		document.getElementById("falseChoice1").setAttribute("onClick","");
-		document.getElementById("falseChoice2").style.backgroundColor="black";
-		document.getElementById("falseChoice2").setAttribute("onClick","");
-		document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
-		}
-		else{
-			noClue.style.display = "none";
-			document.getElementById("falseChoice1").style.backgroundColor="";
-			document.getElementById("falseChoice1").setAttribute("onClick","guessRight()");
-			document.getElementById("falseChoice2").style.backgroundColor="";
-			document.getElementById("falseChoice2").setAttribute("onClick","guessWrong()");
-			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
-			}
-	}		
-
 function enter(){
 	var goInside = document.getElementById("enter");
 	var stayOut = document.getElementById("death2");
@@ -125,49 +83,7 @@ function death2(){
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
 			document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
 			}
-	}		
-
-	function enterb(){
-		var goInside = document.getElementById("enter");
-		var stayOut = document.getElementById("death2");
-			if (goInside.style.display == "none" && stayOut.style.display == "none"){
-			goInside.style.display = "block";
-			document.getElementById("enterChoiceb").style.backgroundColor="black";
-			document.getElementById("enterChoiceb").setAttribute("onClick","");
-			document.getElementById("death2Choiceb").style.backgroundColor="black";
-			document.getElementById("death2Choiceb").setAttribute("onClick","");
-			document.body.style.backgroundImage = "url(images/BGPH-enter.jpg)";
-			}
-			else{
-				goInside.style.display = "none";
-				document.getElementById("enterChoiceb").style.backgroundColor="";
-				document.getElementById("enterChoiceb").setAttribute("onClick","enterb()");
-				document.getElementById("death2Choiceb").style.backgroundColor="";
-				document.getElementById("death2Choiceb").setAttribute("onClick","death2b()");
-				document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
-				}
-		}		
-	
-	function death2b(){
-		var goInside = document.getElementById("enter");
-		var stayOut = document.getElementById("death2");
-			if (goInside.style.display == "none" && stayOut.style.display == "none"){
-			stayOut.style.display = "block";
-			document.getElementById("enterChoiceb").style.backgroundColor="black";
-			document.getElementById("enterChoiceb").setAttribute("onClick","");
-			document.getElementById("death2Choiceb").style.backgroundColor="black";
-			document.getElementById("death2Choiceb").setAttribute("onClick","");
-			document.body.style.backgroundImage = "url(images/BGPH-keepout.jpg)";
-			}
-			else{
-				stayOut.style.display = "none";
-				document.getElementById("enterChoiceb").style.backgroundColor="";
-				document.getElementById("enterChoiceb").setAttribute("onClick","enterb()");
-				document.getElementById("death2Choiceb").style.backgroundColor="";
-				document.getElementById("death2Choiceb").setAttribute("onClick","death2b()");
-				document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
-				}
-		}		
+	}			
 
 function death3(){
 	var nastyNode = document.getElementById("death3");
@@ -287,21 +203,15 @@ function clearance(){
 		setTimeout(function () {
 		if(document.getElementById("death3").style.display == "block"){death3();}
 		if(document.getElementById("upperRoom").style.display == "block"){upperRoom();}
-		}, 500);
-			setTimeout(function () {
+		}, 1100);
+			setTimeout(function () { //breakdown here: bgimage blacks out on revert, rather than animates smoothly. no likey
 			if(document.getElementById("enter").style.display == "block"){enter();}
-			if(document.getElementById("enter").style.display == "block"){enterb();}
 			if(document.getElementById("death2").style.display == "block"){death2();}
-			if(document.getElementById("death2").style.display == "block"){death2b();}
-			}, 1000);
+			}, 2200);
 				setTimeout(function () {
-				if(document.getElementById("correlation").style.display == "block"){guessRight();}
-				if(document.getElementById("noClue").style.display == "block"){guessWrong();}
-				}, 1500);
-					setTimeout(function () {
-					if(document.getElementById("adrift").style.display == "block"){adrift();}
-					if(document.getElementById("landing").style.display == "block"){landing();}
-					}, 2000);
+				if(document.getElementById("adrift").style.display == "block"){adrift();}
+				if(document.getElementById("landing").style.display == "block"){landing();}
+				}, 3300);
 }
 
 	/* Set the width of the side navigation to 250px */
