@@ -138,6 +138,7 @@ function donut(){
 			document.getElementById("dumbellChoice").setAttribute("onClick","");
 			document.getElementById("donutChoice").style.backgroundColor="black";
 			document.getElementById("donutChoice").setAttribute("onClick","");
+			document.getElementById("theSecret").setAttribute("onClick","");
 			document.body.style.backgroundImage = "url(images/BGPH-torus.jpg)";
 		}
 		else{
@@ -146,6 +147,7 @@ function donut(){
 			document.getElementById("dumbellChoice").setAttribute("onClick","dumbell()");
 			document.getElementById("donutChoice").style.backgroundColor="";
 			document.getElementById("donutChoice").setAttribute("onClick","donut()");
+			document.getElementById("theSecret").setAttribute("onClick","breakthrough()");
 			document.body.style.backgroundImage = "url(images/BGPH-choices.jpg)";
 		}
 }
@@ -154,11 +156,12 @@ function dumbell(){
 	var barbell = document.getElementById("barbell");
 	var torus = document.getElementById("torus");
 		if (barbell.style.display == "none" && torus.style.display == "none"){
-		barbell.style.display = "block";
+			barbell.style.display = "block";
 			document.getElementById("dumbellChoice").style.backgroundColor="black";
 			document.getElementById("dumbellChoice").setAttribute("onClick","");
 			document.getElementById("donutChoice").style.backgroundColor="black";
 			document.getElementById("donutChoice").setAttribute("onClick","");
+			document.getElementById("theSecret").setAttribute("onClick","");
 			document.body.style.backgroundImage = "url(images/BGPH-barbell.jpg)";
 		}
 		else{
@@ -167,7 +170,22 @@ function dumbell(){
 			document.getElementById("dumbellChoice").setAttribute("onClick","dumbell()");
 			document.getElementById("donutChoice").style.backgroundColor="";
 			document.getElementById("donutChoice").setAttribute("onClick","donut()");
+			document.getElementById("theSecret").setAttribute("onClick","breakthrough()");
 			document.body.style.backgroundImage = "url(images/BGPH-choices.jpg)";
+		}
+}
+
+function breakthrough(){
+	var barbell = document.getElementById("barbell");
+	var torus = document.getElementById("torus");
+	var breakthrough = document.getElementById("hiddenEnding")
+		if (barbell.style.display == "none" && torus.style.display == "none"){
+			breakthrough.style.display = "block";
+			document.getElementById("dumbellChoice").style.backgroundColor="black";
+			document.getElementById("dumbellChoice").setAttribute("onClick","");
+			document.getElementById("donutChoice").style.backgroundColor="black";
+			document.getElementById("donutChoice").setAttribute("onClick","");
+			document.body.style.backgroundImage = "url(images/BGPH-breakthrough.jpg)";
 		}
 }
 
