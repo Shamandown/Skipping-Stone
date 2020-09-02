@@ -15,7 +15,7 @@ body { background-color: rgb(0, 0, 0);
 	}
 
 form {font-family:"Comic Sans MS", cursive, sans-serif;
-	font-size: large;
+	font-size: 2vh;
 	background-color: white;
 	color: black;
 	border: 2px solid #68e3ff;	
@@ -25,7 +25,7 @@ form {font-family:"Comic Sans MS", cursive, sans-serif;
 	align: middle;
 	}
 
-.storynav {font-size: large;
+.storynav {font-size: 2vh;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 	background-color: white;
 	color: black;
@@ -38,21 +38,23 @@ form {font-family:"Comic Sans MS", cursive, sans-serif;
 	transition-duration: 0.4s;
 	cursor: pointer;
 	border-radius: 8px;
-	}
+}
 
-.storynav:hover {background-color: #68e3ff;
-	color: white;}
+.storynav:hover {
+	background-color: #68e3ff;
+	color: white;
+}
 
 /*styles regular paragraphs — body of the story — */
 article.basic {font-family:"Comic Sans MS", cursive, sans-serif;
 	font-size: large;
-	}	
+}	
 	
 article.robot {
     font-family: "Lucida Console", Monaco, monospace;
 	text-indent: 0px;
 	font-size: large;
-	}
+}
 	
 div.titlebar{
 	position:fixed;
@@ -62,11 +64,11 @@ div.titlebar{
 	width: 100%;
 	text-align: center;
 	padding-bottom: 2vh;
-	}
+}
 
 div.dummydiv{
 	margin: 0 auto;
-	}
+}
 	
 h1.title{
 	font-family: 'Montserrat Subrayada';
@@ -74,7 +76,7 @@ h1.title{
 	font-size: 4vh;
 	text-align: center;
 	line-height: 4vh;
-	}
+}
 
 h2.author{
 	font-family: 'Montserrat Subrayada';
@@ -82,7 +84,14 @@ h2.author{
 	font-size: 3vh;
 	text-align: center;
 	line-height: 3vh;
-	}
+}
+
+#theSecret{
+	color: #68e3ff;
+	cursor: pointer;
+	font-weight: bold;
+	font-family: 'Montserrat Subrayada';
+}
 
 /*sets how elements marked with the class "transform" will transform, if they are transformed.*/
 .transform {
@@ -119,11 +128,11 @@ div.bar {
 
 /* The side navigation menu */
 .sidenav {
-    height: 90vh; /* 90% viewport height */
+    height: 75vh; /* 90% viewport height */
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
     z-index: 1; /* Stay on top */
-    top: 8%; /* Stay at the top */
+    top: 14%; /* Stay below the banner */
     left: 0;
     background-color: rgba(0,0,0,0.7); /* Black semitrans*/
 	overflow: hidden;
@@ -132,15 +141,20 @@ div.bar {
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 	box-shadow: inset 5px 5px 2px white, inset -5px -5px 2px grey;
 }
+.sidenav p {
+	font-size: 2vh;
+	font-family:"Comic Sans MS", cursive, sans-serif;
+}
 
 /* The navigation menu links */
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 3vh;
     color: white;
     display: block;
-    transition: 0.3s;
+	transition: 0.3s;
+	font-family: 'Montserrat Subrayada';
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -153,16 +167,17 @@ div.bar {
     position: absolute;
     top: 0;
     right: 25px;
-    font-size: 36px;
+	font-size: 36px;
+	font-weight: bold;
     margin-left: 50px;
 	color: red;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* On smaller screens, where width is less than 450px, change these styles */
+@media screen and (max-width: 451px) {
     .sidenav {padding-top: 15px;}
-	.sidenav a {font-size: 18px;}
-	.sidenav p {font-size: 18px;}
+	.sidenav a {font-size: 36px;}
+	.sidenav p {font-size: 25px;}
 }
 
 /* Styling the share buttons
