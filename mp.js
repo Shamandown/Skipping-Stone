@@ -60,7 +60,7 @@ function enter(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
-			document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
 		}
 }		
 
@@ -81,7 +81,7 @@ function death2(){
 			document.getElementById("enterChoice").setAttribute("onClick","enter()");
 			document.getElementById("death2Choice").style.backgroundColor="";
 			document.getElementById("death2Choice").setAttribute("onClick","death2()");
-			document.body.style.backgroundImage = "url(images/BGPH-correlation.jpg)";
+			document.body.style.backgroundImage = "url(images/BGPH-landing.jpg)";
 		}
 }			
 
